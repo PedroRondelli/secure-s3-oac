@@ -164,18 +164,18 @@ Pré-requisito: AWS CLI configurada com permissões para criar os recursos do te
 # Criar o stack
 aws cloudformation create-stack \
   --template-file stack-template.yaml \
-  --stack-name secury-s3-oac \
+  --stack-name secure-s3-oac \
   --capabilities CAPABILITY_NAMED_IAM
 
 # Acompanhar eventos do stack
 aws cloudformation describe-stack-events \
-  --stack-name secury-s3-oac \
+  --stack-name secure-s3-oac \
   --query 'StackEvents[*].[LogicalResourceId,ResourceStatus,ResourceStatusReason]' \
   --output table
 
 # Remover o stack
 aws cloudformation delete-stack \
-  --stack-name secury-s3-oac
+  --stack-name secure-s3-oac
 ```
 
 ---
@@ -193,6 +193,6 @@ Para consultar os outputs via CLI:
 
 ```bash
 aws cloudformation describe-stacks \
-  --stack-name secury-s3-oac \
+  --stack-name secure-s3-oac \
   --query 'Stacks[0].Outputs'
 ```
