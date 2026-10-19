@@ -162,7 +162,7 @@ Pré-requisito: AWS CLI configurada com permissões para criar os recursos do te
 
 ```bash
 # Criar o stack
-aws cloudformation deploy \
+aws cloudformation create-stack \
   --template-file stack-template.yaml \
   --stack-name secury-s3-oac \
   --capabilities CAPABILITY_NAMED_IAM
