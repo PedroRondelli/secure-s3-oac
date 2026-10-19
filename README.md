@@ -97,7 +97,7 @@ Usuário
 
 ---
 
-## Principais Propriedades dos Recursos
+## Principais Propriedades dos Recursos e seu papel na estratégia geral
 
 ### `S3Bucket` — Bucket principal da aplicação
 
